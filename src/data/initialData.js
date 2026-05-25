@@ -6,7 +6,7 @@ export const initialResumeData = {
     mobile: "+91 9945519940",
     email: "girish.mulgund@gmail.com",
     website: "linkedin.com/in/girish-mulgund",
-    avatar: "/profile.jpeg"
+    avatar: "/profile.jpg"
   },
   certifications: [
     { name: "Generative AI Leader Certification from Google", logo: "/generative-ai-leader-certification.png" },

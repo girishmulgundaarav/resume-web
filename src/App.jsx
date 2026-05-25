@@ -13,8 +13,8 @@ function App() {
     if (saved) {
       try {
         const parsed = JSON.parse(saved);
-        if (parsed.personal && (parsed.personal.avatar === "/avatar.png" || !parsed.personal.avatar)) {
-          parsed.personal.avatar = "/profile.jpeg";
+        if (parsed.personal && (parsed.personal.avatar === "/avatar.png" || parsed.personal.avatar === "/profile.jpeg" || !parsed.personal.avatar)) {
+          parsed.personal.avatar = "/profile.jpg";
         }
         if (parsed.personal && (parsed.personal.address === "San Jose, California, USA" || !parsed.personal.address)) {
           parsed.personal.address = "2692/A, Sai Surya, Banashankari 6th stage, 4th Block, Bangalore - 560062";
