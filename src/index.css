@@ -53,6 +53,16 @@
     width: 67% !important;
   }
 
+  .yellow-banner {
+    height: 40px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+    flex-direction: row !important;
+    align-items: center !important;
+  }
+
   body {
     background: white !important;
     color: black !important;

@@ -38,8 +38,8 @@ export const ResumePage2 = ({ data, updateData }) => {
     <div className="resume-page bg-white text-slate-800 flex flex-col font-sans relative shadow-2xl overflow-hidden mt-8 print:mt-0 print:shadow-none print:border-none">
       
       {/* 1. Yellow Header Banner */}
-      <div className="bg-[#F2D022] h-10 px-8 flex items-center justify-between text-[12px] font-bold tracking-widest text-slate-900 border-b border-[#D8BA1E]">
-        <span>{personal.title}</span>
+      <div className="yellow-banner bg-[#F2D022] min-h-[2.5rem] h-auto md:h-10 py-2 md:py-0 px-4 md:px-8 flex flex-col md:flex-row items-center justify-between text-[11px] md:text-[12px] font-bold tracking-widest text-slate-900 border-b border-[#D8BA1E] gap-1 md:gap-0 text-center md:text-left">
+        <span className="uppercase text-center md:text-left">{personal.title}</span>
         <span>PROFESSIONAL EXPERIENCE / CONTINUED</span>
       </div>
 
