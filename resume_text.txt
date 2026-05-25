@@ -1,0 +1,45 @@
+[Your Name]Senior QA Automation Lead | AI & Cloud Certified[Location] | [Phone Number] | [Email Address][LinkedIn Profile Link]
+PROFESSIONAL SUMMARY
+Strategic QA Leader with 15 years of IT experience and 10 years specializing in QA Automation. Expert in designing optimal testing strategies across UI, API, and Database layers. Certified Google Generative AI Leader with a proven track record of integrating AI agents (GitHub Copilot, Claude) into the SDLC to drive efficiency. Recognized with multiple awards (Aviva Client Excellence, Diamond Award) for high-quality delivery and seamless stakeholder collaboration in Agile environments.
+TECHNICAL SKILLS
+Testing & Frameworks: Playwright, Selenium WebDriver, Rest Assured, TestNG, Junit, Cucumber (Spring Boot), POM, Data-Driven Testing.
+AI Tools & Agents: GitHub Copilot, Claude Sonnet, Playwright MCP, Playwright CLI.
+Cloud & DevOps: AWS (Certified), Azure (Certified), Jenkins, ADO, Maven, Bitbucket, Splunk.
+Languages & DB: Java, TypeScript, Python, SQL (MS SQL Server, Postgres).
+Tools: Postman, SOAPUI, JIRA, HP ALM, Splunk, IntelliJ, VS Code, Google Antigravity.
+PROFESSIONAL EXPERIENCE
+DXC TECHNOLOGY | Professional 2 Product Test (Lead)Sept 2019 – Present
+Project: Aviva UK (Insurance)
+Architected a scalable Page Object Model (POM) with a data-driven framework using Selenium WebDriver, Java, and TestNG.
+Engineered multi-browser test suites (Chrome/Firefox) for functional, database, and E2E testing on Windows platforms.
+Integrated AI agents (Claude, Copilot) to optimize script maintenance and perform root cause analysis on flaky tests.
+Performed rigorous database testing via SQL Server Management Studio to verify data integrity between UI and backend.
+Awarded 'Exceptional Contribution Diamond Award' and 'Aviva Client Excellence' for zero-defect production milestones.
+Project: HPE EMDM
+Pioneered a Rest Assured testing framework for API validation, automating REST API flows and story-based requirements.
+Collaborated with Business Analysts for requirement analysis, test case review, and high-level test design.
+Drove Agile Scrum ceremonies, including daily stand-ups, sprint planning, and retrospectives.
+KPMG GLOBAL SERVICES | ConsultantOct 2017 – Aug 2019
+Project: Fully Costed Model (Benchmarking Plus)
+Designed and maintained story-based test automation scripts for UI validation using TestNG and Selenium.
+Executed backend validation using SQL Server 2016 to ensure accurate representation of global financial models.
+Managed the full defect lifecycle in JIRA, tracking critical bugs from identification to verified closure.
+IBM GLOBAL SERVICES | Application DeveloperMarch 2015 – Oct 2017
+Project: Claim Microservices (Digital Strategy - Horizon Blue Cross Blue Shield)
+Identified critical-to-quality (CTQ) scenarios for insurance claim microservices and developed manual/automated test cases.
+Developed automated test cases within the TestNG framework and participated in rigorous peer reviews.
+Managed bug reporting and regression cycles using HP ALM to ensure stability in digital strategy initiatives.
+NEXTGEN HEALTHCARE | Sr. Software EngineerOct 2011 – March 2015
+Led development and testing initiatives for healthcare software systems, specializing in SQL Server backend validation and performance stability.
+PIXEL INFOTEK PVT LTD | CAD EngineerMay 2006 – Sept 2011
+Managed engineering design projects and technical documentation within an engineering services environment.
+LEADERSHIP & QA STRATEGY
+Drive test design and application testability across multiple teams ensuring delivery aligns with agreed timelines.
+Effectively communicate quality metrics, test artifacts, and technical recommendations to stakeholders.
+Drives troubleshooting, root cause analysis, and implements preventative measures/mitigation options for project risks.
+Supports the expansion of test automation at the project level and conducts automation test reviews across multiple projects.
+HONORS & AWARDS
+Aviva Client Excellence Award
+Collaborator and Champions Award
+Exceptional Contribution Diamond Award
+Quarterly Champ Awards

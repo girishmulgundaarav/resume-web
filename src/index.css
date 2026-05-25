@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-accent-light: #F2D022;
+  --color-accent-dark: #FBBF24;
+  --font-sans: "Outfit", "Inter", "system-ui", "sans-serif";
+}
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-800 font-sans antialiased selection:bg-accent-light selection:text-slate-900;
+  }
+}
+
+/* Custom scrollbar for control panel and editing */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.5);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(156, 163, 175, 0.8);
+}
+
+/* Print Specific Styles */
+@media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  .zoom-container {
+    zoom: 1 !important;
+  }
+
+  body {
+    background: white !important;
+    color: black !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 210mm;
+    height: 594mm; /* Exact height for two A4 pages */
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  /* Page container styling for print */
+  .resume-page {
+    width: 210mm !important;
+    height: 297mm !important;
+    page-break-after: always !important;
+    page-break-inside: avoid !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+    overflow: hidden !important;
+    position: relative !important;
+    box-sizing: border-box !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Ensure background colors print correctly */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+}
+
+/* Screen Specific Styles to resemble real pages */
+@media screen {
+  .resume-page {
+    width: 210mm;
+    height: 297mm;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+  }
+}
+
+/* Inline Edit Highlights */
+.edit-highlight {
+  position: relative;
+  transition: all 0.2s ease;
+}
+.edit-highlight:hover {
+  background-color: rgba(242, 208, 34, 0.12);
+  outline: 1px dashed rgba(242, 208, 34, 0.8);
+  border-radius: 2px;
+  cursor: pointer;
+}
+.edit-highlight:focus {
+  background-color: rgba(242, 208, 34, 0.05);
+  outline: 2px solid rgba(242, 208, 34, 0.9);
+  border-radius: 2px;
+  cursor: text;
+}
