@@ -41,6 +41,18 @@
     zoom: 1 !important;
   }
 
+  .main-split-grid {
+    flex-direction: row !important;
+  }
+  .sidebar-column {
+    width: 33% !important;
+    border-right: 1px solid #e2e8f0 !important;
+    border-bottom: none !important;
+  }
+  .main-column {
+    width: 67% !important;
+  }
+
   body {
     background: white !important;
     color: black !important;
@@ -79,7 +91,7 @@
 }
 
 /* Screen Specific Styles to resemble real pages */
-@media screen {
+@media screen and (min-width: 850px) {
   .resume-page {
     width: 210mm;
     height: 297mm;
@@ -87,6 +99,20 @@
     box-sizing: border-box;
     overflow: hidden;
     position: relative;
+  }
+}
+
+@media screen and (max-width: 849px) {
+  .resume-page {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    overflow: visible !important;
+    box-sizing: border-box;
   }
 }
 

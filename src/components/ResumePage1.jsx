@@ -66,10 +66,10 @@ export const ResumePage1 = ({ data, updateData }) => {
       </div>
 
       {/* 2. Main Content Split Grid */}
-      <div className="flex-1 flex min-h-0">
+      <div className="flex-1 flex flex-col md:flex-row min-h-0 main-split-grid">
         
         {/* Left Sidebar (33% width) */}
-        <div className="w-[33%] border-r border-slate-200 flex flex-col justify-between p-5">
+        <div className="w-full md:w-[33%] border-b md:border-b-0 md:border-r border-slate-200 flex flex-col justify-between p-5 sidebar-column">
           
           <div className="space-y-5">
             {/* Contact Details with Yellow Circles */}
@@ -133,7 +133,7 @@ export const ResumePage1 = ({ data, updateData }) => {
 
             {/* Photo / Avatar */}
             <div className="relative group overflow-hidden border-t border-slate-200 pt-5 flex justify-center">
-              <div className="w-[52%] aspect-square rounded-full border-4 border-[#F2D022] overflow-hidden relative shadow-md">
+              <div className="w-32 md:w-[52%] aspect-square rounded-full border-4 border-[#F2D022] overflow-hidden relative shadow-md">
                 <img 
                   src={personal.avatar} 
                   alt="Profile Photo" 
@@ -237,7 +237,7 @@ export const ResumePage1 = ({ data, updateData }) => {
         </div>
 
         {/* Right Content Area (67% width) */}
-        <div className="w-[67%] flex flex-col min-h-0">
+        <div className="w-full md:w-[67%] flex flex-col min-h-0 main-column">
           
           {/* Top section: Name, Summary and Technical Skills */}
           <div className="p-5 pb-2.5 space-y-2.5">

@@ -141,7 +141,7 @@ function App() {
       )}
 
       {/* Centered Scrollable Document Area */}
-      <div className="flex-1 py-8 px-4 flex flex-col items-center justify-start overflow-y-auto print:p-0 print:overflow-visible">
+      <div className="flex-1 py-4 md:py-8 px-2 md:px-4 flex flex-col items-center justify-start overflow-x-auto overflow-y-auto print:p-0 print:overflow-visible">
         <div 
           className="flex flex-col items-center print:block print:w-[210mm] origin-top zoom-container"
           style={{ zoom: zoom }}

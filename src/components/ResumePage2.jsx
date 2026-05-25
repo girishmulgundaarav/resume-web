@@ -44,10 +44,10 @@ export const ResumePage2 = ({ data, updateData }) => {
       </div>
 
       {/* 2. Main Content Split Grid */}
-      <div className="flex-1 flex min-h-0">
+      <div className="flex-1 flex flex-col md:flex-row min-h-0 main-split-grid">
         
         {/* Left Sidebar (33% width) */}
-        <div className="w-[33%] border-r border-slate-200 flex flex-col justify-between p-5">
+        <div className="w-full md:w-[33%] border-b md:border-b-0 md:border-r border-slate-200 flex flex-col justify-between p-5 sidebar-column">
           
           <div className="space-y-6">
             
@@ -105,7 +105,7 @@ export const ResumePage2 = ({ data, updateData }) => {
         </div>
 
         {/* Right Content Area (67% width) */}
-        <div className="w-[67%] flex flex-col justify-between min-h-0 bg-slate-50">
+        <div className="w-full md:w-[67%] flex flex-col justify-between min-h-0 bg-slate-50 main-column">
           
           <div className="p-6 pb-3 space-y-3">
             
