@@ -88,33 +88,6 @@ export const ControlPanel = ({
             )}
           </button>
 
-          {/* Zoom Controls */}
-          <div className="flex items-center gap-1 bg-slate-800 border border-slate-700 rounded-lg p-1.5 text-slate-200">
-            <button 
-              onClick={() => onZoomChange(Math.max(0.5, zoom - 0.1))}
-              disabled={zoom <= 0.5}
-              className="p-1 rounded hover:bg-slate-700 active:scale-95 transition-all text-slate-400 hover:text-slate-200 disabled:opacity-30 disabled:pointer-events-none"
-              title="Zoom Out"
-            >
-              <ZoomOut className="w-4 h-4" />
-            </button>
-            <span 
-              onClick={() => onZoomChange(1.0)}
-              className="text-xs font-mono font-semibold w-12 text-center cursor-pointer hover:text-amber-400 select-none text-slate-300"
-              title="Reset to 100%"
-            >
-              {Math.round(zoom * 100)}%
-            </span>
-            <button 
-              onClick={() => onZoomChange(Math.min(1.5, zoom + 0.1))}
-              disabled={zoom >= 1.5}
-              className="p-1 rounded hover:bg-slate-700 active:scale-95 transition-all text-slate-400 hover:text-slate-200 disabled:opacity-30 disabled:pointer-events-none"
-              title="Zoom In"
-            >
-              <ZoomIn className="w-4 h-4" />
-            </button>
-          </div>
-
           {/* Reset - Only visible in edit mode */}
           {isEditable && (
             <button 
@@ -127,15 +100,46 @@ export const ControlPanel = ({
             </button>
           )}
 
-          {/* Print / Save PDF */}
-          <button 
-            onClick={onPrint}
-            className="flex items-center gap-2 px-5 py-2 rounded-lg text-sm bg-amber-400 hover:bg-amber-300 text-slate-900 transition-all font-semibold shadow-lg shadow-amber-400/20 active:scale-95"
-            title="Print Resume or Save as PDF"
-          >
-            <Printer className="w-4 h-4" />
-            <span>Print / Save PDF</span>
-          </button>
+          {/* Zoom & Print Group */}
+          <div className="flex items-center gap-2">
+            {/* Zoom Controls */}
+            <div className="flex items-center gap-1 bg-slate-800 border border-slate-700 rounded-lg p-1.5 text-slate-200">
+              <button 
+                onClick={() => onZoomChange(Math.max(0.5, zoom - 0.1))}
+                disabled={zoom <= 0.5}
+                className="p-1 rounded hover:bg-slate-700 active:scale-95 transition-all text-slate-400 hover:text-slate-200 disabled:opacity-30 disabled:pointer-events-none"
+                title="Zoom Out"
+              >
+                <ZoomOut className="w-4 h-4" />
+              </button>
+              <span 
+                onClick={() => onZoomChange(1.0)}
+                className="text-xs font-mono font-semibold w-12 text-center cursor-pointer hover:text-amber-400 select-none text-slate-300"
+                title="Reset to 100%"
+              >
+                {Math.round(zoom * 100)}%
+              </span>
+              <button 
+                onClick={() => onZoomChange(Math.min(1.5, zoom + 0.1))}
+                disabled={zoom >= 1.5}
+                className="p-1 rounded hover:bg-slate-700 active:scale-95 transition-all text-slate-400 hover:text-slate-200 disabled:opacity-30 disabled:pointer-events-none"
+                title="Zoom In"
+              >
+                <ZoomIn className="w-4 h-4" />
+              </button>
+            </div>
+
+            {/* Print / Save PDF */}
+            <button 
+              onClick={onPrint}
+              className="flex items-center gap-2 px-4 sm:px-5 py-2 rounded-lg text-sm bg-amber-400 hover:bg-amber-300 text-slate-900 transition-all font-semibold shadow-lg shadow-amber-400/20 active:scale-95 whitespace-nowrap"
+              title="Print Resume or Save as PDF"
+            >
+              <Printer className="w-4 h-4" />
+              <span className="hidden sm:inline">Print / Save PDF</span>
+              <span className="sm:hidden">Print</span>
+            </button>
+          </div>
 
         </div>
 
