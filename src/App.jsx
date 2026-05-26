@@ -37,6 +37,10 @@ function App() {
         if (!parsed.certifications || !parsed.certifications[0]?.logo) {
           parsed.certifications = initialResumeData.certifications;
         }
+        if (parsed.education && parsed.education[0] && parsed.education[0].school === "Visvesvaraya Technological University") {
+          parsed.education[0].school = "UBDT College of Engineering";
+          parsed.education[0].degree = "Bachelor of Engineering (Industrial Production)";
+        }
         return parsed;
       } catch (e) {
         console.error("Error parsing saved resume data, resetting.", e);

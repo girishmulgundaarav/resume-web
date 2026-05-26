@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, Globe, Award, CheckCircle2 } from 'lucide-react';
+import { MapPin, Phone, Mail, Globe, Award, CheckCircle2, GraduationCap } from 'lucide-react';
 import { Editable } from './Editable';
 
 export const ResumePage1 = ({ data, updateData }) => {
@@ -209,10 +209,11 @@ export const ResumePage1 = ({ data, updateData }) => {
             {/* Education Section */}
             <div className="space-y-2.5">
               <h3 className="text-[14px] font-bold uppercase tracking-wider text-slate-900 border-b border-slate-200 pb-1 flex items-center gap-1.5">
+                <GraduationCap className="w-3.5 h-3.5 text-[#F2D022]" />
                 Education
               </h3>
               {education.map((edu, index) => (
-                <div key={index} className="text-[12.5px] leading-relaxed space-y-0.5">
+                <div key={index} className="text-[12.5px] leading-normal space-y-0.5">
                   <Editable 
                     value={edu.school} 
                     onChange={(val) => updateEducation(index, 'school', val)}
@@ -240,7 +241,7 @@ export const ResumePage1 = ({ data, updateData }) => {
         <div className="w-full md:w-[67%] flex flex-col min-h-0 main-column">
           
           {/* Top section: Name, Summary and Technical Skills */}
-          <div className="p-5 pb-2.5 space-y-2.5">
+          <div className="p-5 pb-2 space-y-2">
             <div>
               <h2 className="text-[38px] font-extrabold tracking-tight text-slate-900 uppercase leading-none">
                 <Editable 
@@ -248,7 +249,7 @@ export const ResumePage1 = ({ data, updateData }) => {
                   onChange={(val) => updatePersonal('name', val)}
                 />
               </h2>
-              <div className="mt-2.5 text-[13.5px] leading-relaxed text-slate-600 border-l-2 border-[#F2D022] pl-3">
+              <div className="mt-2 text-[13.5px] leading-normal text-slate-600 border-l-2 border-[#F2D022] pl-3">
                 <Editable 
                   value={summary} 
                   onChange={(val) => updateData('summary', val)}
@@ -259,22 +260,22 @@ export const ResumePage1 = ({ data, updateData }) => {
 
             {/* Technical Skills Section */}
             <div className="space-y-1.5 pt-1.5 border-t border-slate-100">
-              <h3 className="text-[14px] font-bold uppercase tracking-widest text-slate-900 border-b border-[#F2D022] pb-0.5">
+              <h3 className="text-[14px] font-bold uppercase tracking-widest text-slate-900 border-b border-[#F2D022] pb-1">
                 Technical Skills
               </h3>
-              <div className="space-y-1 text-[12.5px] leading-normal text-slate-600">
+              <div className="space-y-2.5 md:space-y-0 md:grid md:grid-cols-[145px_1fr] md:gap-x-4 md:gap-y-1 text-[12.5px] leading-normal text-slate-600">
                 {data.technicalSkills && data.technicalSkills.map((skill, index) => (
-                  <div key={index} className="flex items-start gap-1">
-                    <span className="font-bold text-slate-800 flex-shrink-0">
+                  <div key={index} className="flex flex-col md:contents">
+                    <span className="font-bold text-slate-800 md:text-right md:pr-3 md:border-r-2 md:border-[#F2D022]/60 flex-shrink-0 self-start pt-0.5">
                       <Editable 
                         value={skill.label} 
                         onChange={(val) => updateTechnicalSkill(index, 'label', val)}
-                      />:
+                      />
                     </span>
                     <Editable 
                       value={skill.value} 
                       onChange={(val) => updateTechnicalSkill(index, 'value', val)}
-                      className="text-slate-600 flex-1 text-left"
+                      className="text-slate-600 text-left pt-0.5"
                       multiline
                     />
                   </div>
@@ -283,11 +284,11 @@ export const ResumePage1 = ({ data, updateData }) => {
             </div>
 
             {/* Leadership & QA Strategy Section */}
-            <div className="space-y-1.5 pt-1.5 border-t border-slate-100">
+            <div className="space-y-1 pt-1 border-t border-slate-100">
               <h3 className="text-[14px] font-bold uppercase tracking-widest text-slate-900 border-b border-[#F2D022] pb-0.5">
                 Leadership & QA Strategy
               </h3>
-              <ul className="list-none space-y-1 text-[12.5px] leading-relaxed text-slate-600">
+              <ul className="list-none space-y-1 text-[12.5px] leading-normal text-slate-600">
                 {(leadership || []).map((leadItem, index) => (
                   <li key={index} className="flex items-start gap-2">
                     <CheckCircle2 className="w-3.5 h-3.5 text-[#F2D022] flex-shrink-0 mt-0.5" />
@@ -304,7 +305,7 @@ export const ResumePage1 = ({ data, updateData }) => {
           </div>
 
           {/* Bottom section: Professional Experience with Grey background */}
-          <div className="flex-1 bg-slate-50 p-5 pt-3.5 border-t border-slate-200 space-y-2.5 overflow-hidden">
+          <div className="flex-1 bg-slate-50 p-5 pt-3 pb-5 border-t border-slate-200 space-y-2 overflow-hidden">
             <h3 className="text-[15px] font-bold uppercase tracking-widest text-slate-900 border-b border-slate-300 pb-1">
               Professional Experience
             </h3>
@@ -346,7 +347,7 @@ export const ResumePage1 = ({ data, updateData }) => {
                           onChange={(val) => updateExperience(expIdx, projIdx, undefined, val)}
                           className="text-[13.5px] font-bold text-slate-800 block leading-tight"
                         />
-                        <ul className="list-disc pl-4 space-y-0.5 text-[12.5px] leading-relaxed text-slate-600">
+                        <ul className="list-disc pl-4 space-y-0.5 text-[12.5px] leading-normal text-slate-600">
                           {proj.bullets.map((bullet, bulletIdx) => (
                             <li key={bulletIdx}>
                               <Editable 

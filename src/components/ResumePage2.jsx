@@ -137,7 +137,7 @@ export const ResumePage2 = ({ data, updateData }) => {
                             className="text-[13.5px] font-bold text-slate-800 block leading-tight"
                           />
                         )}
-                        <ul className="list-disc pl-4 text-[12.5px] leading-relaxed text-slate-600">
+                        <ul className="list-disc pl-4 text-[12.5px] leading-normal text-slate-600">
                           {proj.bullets.map((bullet, bulletIdx) => (
                             <li key={bulletIdx}>
                               <Editable 
@@ -193,7 +193,7 @@ export const ResumePage2 = ({ data, updateData }) => {
                             className="text-[13.5px] font-bold text-slate-800 block leading-tight"
                           />
                         )}
-                        <ul className="list-disc pl-4 text-[12.5px] leading-relaxed text-slate-600">
+                        <ul className="list-disc pl-4 text-[12.5px] leading-normal text-slate-600">
                           {proj.bullets.map((bullet, bulletIdx) => (
                             <li key={bulletIdx}>
                               <Editable 

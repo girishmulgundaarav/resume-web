@@ -23,9 +23,9 @@ export const initialResumeData = {
   summary: "Strategic QA Leader with 15 years of IT experience and 10 years specializing in QA Automation. Expert in designing optimal testing strategies across UI, API, and Database layers. Certified Google Generative AI Leader with a proven track record of integrating AI agents (GitHub Copilot, Claude) into the SDLC to drive efficiency. Recognized with multiple awards (Aviva Client Excellence, Diamond Award) for high-quality delivery and seamless stakeholder collaboration in Agile environments.",
   education: [
     {
-      school: "Visvesvaraya Technological University",
+      school: "UBDT College of Engineering",
       dates: "2002 - 2006",
-      degree: "Bachelor of Engineering in Computer Science"
+      degree: "Bachelor of Engineering (Industrial Production)"
     }
   ],
   languages: [
